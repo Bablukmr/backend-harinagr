@@ -8,9 +8,9 @@ app.use("/files", express.static("files"));
 
 app.use(express.json());
 app.use(cors());
-
-const mongourl =
-  "mongodb+srv://bablu:bablu@cluster0.ok8ob2s.mongodb.net/?retryWrites=true&w=majority";
+//mongodb+srv://bablu:<password>@cluster0.t2ecgk8.mongodb.net/?retryWrites=true&w=majority
+const mongourl = "mongodb+srv://bablu:bablu@cluster0.t2ecgk8.mongodb.net/?retryWrites=true&w=majority"
+  // "mongodb+srv://bablu:bablu@cluster0.ok8ob2s.mongodb.net/?retryWrites=true&w=majority";
 
 mongoose
   .connect(mongourl, {
